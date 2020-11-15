@@ -112,3 +112,22 @@ failovermethod=priority
 enabled=1
 gpgcheck=0
 EOF
+
+
+
+sudo dnf install vscode
+
+sudo dnf install postgresql-server
+postgresql-setup --initdb
+
+sudo -u postgres psql
+ALTER USER postgres WITH PASSWORD 'azpoazpo';
+
+vi /var/lib/pgsql/pg_hba.conf
+
+
+sudo dnf install java-11-openjdk-devel
+sudo yum -y install wget
+wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
+sudo rpm -Uvh ./dbeaver-ce-latest-stable.x86_64.rpm
+
