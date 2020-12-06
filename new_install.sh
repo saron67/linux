@@ -131,3 +131,10 @@ sudo yum -y install wget
 wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 sudo rpm -Uvh ./dbeaver-ce-latest-stable.x86_64.rpm
 
+
+
+
+sudo wget https://balena.io/etcher/static/etcher-rpm.repo -O /etc/yum.repos.d/etcher-rpm.repo
+sudo dnf install balena-etcher-electron
+
+
